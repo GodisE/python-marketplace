@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = erikadphelm16@gmail.com
+	name = erika helm
+[core]
+	excludesfile = /root/.gitignore_global

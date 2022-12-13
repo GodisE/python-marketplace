@@ -1,0 +1,22 @@
+status: 200
+date: Mon, 12 Dec 2022 15:44:49 GMT
+server: gunicorn/19.8.1
+x-powered-by: Zope (www.zope.org), Python (www.python.org)
+content-security-policy: frame-ancestors 'self';
+content-type: application/json
+strict-transport-security: max-age=15552000
+vary: Accept,Accept-Encoding
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-launchpad-revision: c3f9a3a8c5fffd8b8763824e1f305083a4e9705e
+x-lazr-notifications: []
+x-xss-protection: 1; mode=block
+x-vcs-revision: c3f9a3a8c5fffd8b8763824e1f305083a4e9705e
+x-request-id: 401ddc88-cf87-4a25-bccc-fef75992e574
+content-length: 1425
+-content-encoding: gzip
+content-location: https://api.launchpad.net/devel/~git-core?name=%22ppa%22&ws.op=getPPAByName
+-varied-accept: application/json
+-varied-accept-encoding: gzip, deflate
+
+{"self_link": "https://api.launchpad.net/devel/~git-core/+archive/ubuntu/ppa", "web_link": "https://launchpad.net/~git-core/+archive/ubuntu/ppa", "resource_type_link": "https://api.launchpad.net/devel/#archive", "owner_link": "https://api.launchpad.net/devel/~git-core", "name": "ppa", "displayname": "Git stable releases", "reference": "~git-core/ubuntu/ppa", "distribution_link": "https://api.launchpad.net/devel/ubuntu", "private": false, "suppress_subscription_notifications": false, "dependencies_collection_link": "https://api.launchpad.net/devel/~git-core/+archive/ubuntu/ppa/dependencies", "description": "The most current stable version of Git for Ubuntu.\n\nFor release candidates, go to https://launchpad.net/~git-core/+archive/candidate .", "signing_key_fingerprint": "E1DD270288B4E6030699E45FA1715D88E1DF1F24", "require_virtualized": true, "build_debug_symbols": true, "publish_debug_symbols": true, "permit_obsolete_series_uploads": false, "authorized_size": 2048, "status": "Active", "external_dependencies": null, "processors_collection_link": "https://api.launchpad.net/devel/~git-core/+archive/ubuntu/ppa/processors", "enabled_restricted_processors_collection_link": "https://api.launchpad.net/devel/~git-core/+archive/ubuntu/ppa/enabled_restricted_processors", "publish": true, "relative_build_score": 0, "http_etag": "\"5dba76984353d257b8edf2b8371a161683fe4461-51844928cf93736b170f8037f09b642a8565c753\""}
