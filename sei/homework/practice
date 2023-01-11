@@ -1,0 +1,685 @@
+/*
+ * Work through each of the prompts below. Update `index.html` with the link to
+ * this file to see your results in the console.
+ *
+ * Pro Tip: Comment out your solution to a prompt before moving on to the next
+ * one.
+ */
+
+/*
+ * Prompt 01:
+ *
+ * Create a variable called message using var and assign it the value 'Hello
+ * World'
+ */
+
+ const message {
+    sayHello("Hello World")
+ }
+sayHello()
+/*
+ * Prompt 02:
+ *
+ *  Create a variable called firstName using let and assign it the value of your
+ *  first name.
+ */
+
+ let firstName
+ firstName =  'Erika'
+
+/*
+ * Prompt 03:
+ *
+ * Create a variable called lastName using const and assign it the value of your
+ * last name.
+ */
+
+
+const lastName = "Helm"
+
+
+
+
+/*
+ * Prompt 04:
+ *
+ * Create a variable called number and assign a number to it. On separate lines
+ * for each, assign a string, another number, and a boolean value to the
+ * variable.
+ *
+ * What do we need to use to define variables we can change?
+ */
+
+
+let number = 1
+const number = {
+    number = 22
+    name = "Erika Helm"
+    isABoss = True
+
+}
+
+
+
+
+/*
+ * Prompt 05:
+ *
+ * Define a variable in such a way that we can't change it's value later.
+ */
+ const number = 12
+
+
+
+
+
+ /*
+ * Work through each of the prompts below. Update `index.html` with the link to
+ * this file to see your results in the console.
+ *
+ * Pro Tip: Comment out your solution to a prompt before moving on to the next
+ * one.
+ */
+
+/*
+ * Prompt 01:
+ *
+ * Create a variable called firstName and assign it a string of your first name.
+ * Create a variable called lastName and assign it a string of your last name.
+ * Create a variable called full name and assign it your full name using the
+ * firstName and lastName variables.
+ */
+const firstName = "Erika"
+const lastName = "Helm"
+const fullName = firstName + lastName
+/*
+ * Prompt 02:
+ *
+ * Create a variable holding the sentence "She sells sea shells by the sea
+ * shore", but by adding one word to the string at a time.
+ */
+
+const sentence = "she " + "sells " + "sea " + "shells " + "down " + "by " + "the " + "sea " + "shore " 
+
+
+/*
+ * Prompt 03:
+ *
+ * Check if the string in the sentence variable includes the word 'fox'
+ */
+
+let sentence = "The quick brown fox jumped over the lazy dog.";
+sentence.includes("fox")
+
+
+/*
+ * Prompt 04:
+ *
+ * Use the replace method to replace 'Andy Dwyer' with your name.
+ */
+
+let andy = "The best character on Parks and Rec is Andy Dwyer - hands down!";
+andy2 = andy.replace("Andy Dwyer", "Erika Helm")
+
+/*
+ * Prompt 05:
+ *
+ * Create the string "eeny, meeny, miny, moe" by concatenating the strings
+ * together using the concat method
+ */
+let eeny = "eeny";
+let meeny = "meeny";
+let miny = "miny";
+let moe = "moe";
+let str = eeny + meeny + miny + moe
+
+/*
+ * Prompt 06:
+ *
+ * Split the string below into an array of characters
+ */
+
+let toArray = "Goodnight Moon";
+toArray.Split(" ")
+
+
+
+/*
+ * Work through each of the prompts below. Update `index.html` with the link to
+ * this file to see your results in the console.
+ *
+ * Pro Tip: Comment out your solution to a prompt before moving on to the next
+ * one.
+
+/*
+ * Prompt 01:
+ *
+ * Create a variable and assign it a random number between 0 and 100 using
+ * Math.random(). Create a conditional so that if the number is greater than 50,
+ * you print the message "That's a big number!"
+ */
+
+const randomNumber = Math.random()
+for (let i = 0; i < randomNumber; i++){
+    if (randomNumber > 50)
+    return "thats a big number"
+}
+
+
+
+
+/*
+ * Prompt 02:
+ *
+ * Monkey in the middle! Create a variable and assign it a random number between
+ * 0 and 10 using Math.Random(). Create a conditional that:
+ *
+ *   - prints "small number" if the number is less than 5
+ *   - prints "big number" if the number is greater than 5
+ *   - otherwise, prints "monkey"
+ */
+
+
+const random = Math.random(<=10) => {
+    if (random < 5){ 
+    return "small number"
+    } else if (random > 5){
+        return "big number"
+    }else{
+        return "monkey"
+    }
+}
+
+
+
+
+/*
+ * Prompt 03:
+ *
+ * Driver's Ed! Create a variable that holds a person's age. If their age is
+ * greater than 16, print "Here are the keys"; otherwise print "Sorry, you're
+ * too young for now."
+ */
+ const age = () => {
+    if (age > 16){
+        return "Here's the keys"
+    }else{
+        return "Sorry, you're too young for now"
+    }
+ }
+
+
+
+
+ /*
+ * Work through each of the prompts below. Update `index.html` with the link to
+ * this file to see your results in the console.
+ *
+ * Pro Tip: Comment out your solution to a prompt before moving on to the next
+ * one.
+ */
+
+/*
+ * Prompt 01:
+ *
+ * Create an array called people that contains three names in it.
+ */
+
+
+
+const people ["Erika", "Lee", "Nannette"]
+
+
+
+
+
+
+/*
+ * Prompt 02:
+ *
+ * Create an array called countries that contains four countries in it.
+ */
+
+
+const countries ["Germany", "Colombia", "France", "Brazil"]
+
+
+
+
+
+/*
+ * Prompt 03:
+ *
+ * Create an array called cities taht contains five cities in it.
+ */
+
+
+
+
+const cities ["chicago", "new york", "las vegas", "Tokyo", "rome",]
+
+
+
+
+/*
+ * Prompt 04:
+ *
+ * Create an empty array called favoriteNumbers. On a separate line for each,
+ * add a number to the favoriteNumbers array so there are 4 numbers in it.
+ */
+
+
+
+ const numbers []
+numbers[0] = 1
+numbers[1] = 2
+numbers[2] = 3
+numbers[3] = 4
+
+
+
+
+/*
+ * Prompt 05:
+ *
+ * Create an empty array called actors. On a separate line for each, add an
+ * actor to the actors array so there are 5 actors in it.
+ */
+
+
+
+const actors = []
+actors.unshift("Denzel Washington")
+actors.unshift("Will Ferrel")
+actors.unshift("Sasha")
+actors.unshift("Anyone")
+actors.unshift("Hello")
+
+
+
+
+/*
+ * Prompt 06:
+ *
+ * Create an array called sesameStreetCharacters with "Elmo", "Big Bird",
+ * "Cookie Monster", "Ernie", and "Bert" in it. On a separate line for each,
+ * remove the last 3 characters.
+ */
+
+
+
+const sesameStreetCharacters ["Elmo", "Big Bird", "Cookie Monster", "Ernie", "Bert"]
+sesameStreetCharacters.pop()
+sesameStreetCharacters.pop()
+sesameStreetCharacters.pop()
+
+
+
+
+
+/*
+ * Prompt 07:
+ *
+ * Create an array called starWarsCharacters with "Luke", "Leia", "Han",
+ * "R2-D2", "Chewbacca", and "C-3PO" in it. Create a variable called han and
+ * assign it the string "Han" from the array (i.e. retrieve it from the array).
+ * Do the same for luke, leia, and chewbacca.
+ */
+
+
+
+
+const starWarsCharacters ["Luke", "Leia", "Han", "R2-D2", "Chewbacca", "C-CPO"]
+const han = starWarsCharacters[2]
+const luke = starWarsCharacters[0]
+const leia = starWarsCharacters [1]
+const chewbacca = starWarsCharacters [3]
+
+
+
+
+
+
+/*
+ * Prompt 08:
+ *
+ * Create an array called jerseyShore with "JWoww", "The Situation", "DJ Pauly
+ * D", "Snookie", and "Sweetheart" in it. On separate lines for each, remove
+ * "Snookie" and "DJ Pauly D"
+ */
+
+
+const jerseyShore ["JWoww", "The situation", "Dj Pauly D", "Snookie", "Sweetheart"]
+jerseyShore.remove(jerseyShore[3])
+jerseyShore.remove(jerseyShore[2])
+
+
+
+
+
+/*
+ * Prompt 09:
+ *
+ * Create an array called months with all 12 months as strings in it (i.e.
+ * "January", "February", "March", etc). In a single line, delete "September",
+ * "October", and "November".
+ */
+
+const months ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+months.remove(months[8], months[9], months[10])
+
+
+
+
+
+
+
+/*
+ * Prompt 10:
+ *
+ * Create an array called months with all 12 months as strings in it (i.e.
+ * "January", "February", "March", etc). Create a loop that prints out each
+ * month from the array on a separate line.
+ */
+
+const months ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+for (let i = 0; i < months.length; i++)
+return months[i]
+
+
+
+
+
+
+/*
+ * Prompt 11:
+ *
+ * Create an empty array called randomNumbers. Write a for loop that will add
+ * 4 random numbers to the randomNumbers array using Math.random() and push.
+ */
+
+
+const randomNumbers []
+for (let i = 0; i < randomNumbers.length; i++){ 
+randomNumbers.push(Math.random())
+randomNumbers.push(Math.random())
+randomNumbers.push(Math.random())
+randomNumbers.push(Math.random())
+}
+
+
+
+
+/*
+ * Prompt 12:
+ *
+ * Create an array name foods and add 10 foods to it. Create another array
+ * called favoriteFoods but leave it empty. Create an array that loops through
+ * the foods array and adds the current item to the favoriteFoods array if the
+ * string is longer than 6 characters (i.e. string.length > 6).
+ */
+
+const foods = ["dressing", "ice cream", "fruit", "mac & cheese", "yams", "collards", "ramen", "lasanga", "burger", "pizza"]
+for (let i = 0; i < foods.length; i++)
+const favoriteFoods []
+
+
+/*
+ * Work through each of the prompts below. Update `index.html` with the link to
+ * this file to see your results in the console.
+ *
+ * Pro Tip: Comment out your solution to a prompt before moving on to the next
+ * one.
+ */
+
+/*
+ * Prompt 01:
+ *
+ * Create an object representing a person with name, age, and gender properies.
+ */
+const person = {
+    name: "Erika",
+    age: 22,
+    gender: "female"
+}
+/*
+ * Prompt 02:
+ *
+ * Create an object for a movie with a title (string), genre (string), length
+ * (number), and cast (array). Fill the cast array with characters from the
+ * movie (strings).
+ */
+const aliceInWonderland = {
+    title: "Alice in Wonderland",
+    genre: "family & children",
+    length: 2,
+    cast: [
+        "Alice",
+        "Mad-hatter",
+        "Tweedledee",
+        "Tweedledum",
+        "Jabber-wocky",
+        "Queen od Hearts",
+        "Ice Queen"
+    ]
+}
+/*
+ * Prompt 03:
+ *
+ * Given the slimer object:
+ *   - What would you write to access the name and console.log it?
+ *   - What would you write to change the type to 'creature' (without changing it inside the object)
+ *   - What would you write to add a key to the object called age, and set the age to 6?
+ *   - console.log the object to make sure type is creature, and age is 6
+ */
+const monster = {
+  name: "Slimer",
+  color: "greenish",
+  type: "plasm or ghost or something"
+};
+console.log(monster.name)
+monster.type = ("creature")
+monster.age = "6"
+console.log(monster)
+/*
+ * Prompt 04:
+ *
+ * Create an empty object called computer and save it to a variable.
+ *
+ * On the next line, add a make property and set it equal to 'Apple'.
+ * On the next line, add a model property and set it equal to 'MacBook'.
+ * On the next line, add a year property and set it equal to 2017.
+ * On the next line, add a `warranty-type` (spelled exactly )property and set it
+ * equal to 'limited'.
+ */
+const computer {
+    property = "Apple",
+    modelProperty = "MacBook",
+    year = 2017
+    warranty-type = "limited"
+}
+/*
+ * Prompt 05:
+ *
+ * Crazy Object! Use the object below to log out each the following:
+ *
+ *   - "omg my mouth is burning"
+ *   - "Pretty pretty prettayyyyy good"
+ *   - "Swearing at Larry and Jeff"
+ *   - "Chicken Teriyaki Boyyyyyy"
+ *   - The object the contains the name funkhauser
+ *   - Add the quote "I'm trying to elevate small talk to medium talk" to Larry's
+ *     quote array. Confirm that it was added.
+ *
+ 
+ */
+const crazyObject = {
+  taco: [
+    {
+      meat: "steak",
+      cheese: ["panela", "queso", "chihuahua"]
+    },
+    {
+      meat: "chicken",
+      salsa: [
+        "pico",
+        "hot",
+        "hotter",
+        "really hot",
+        "really really hot",
+        "omg my mouth is burning"
+      ]
+    }
+  ],
+  larry: {
+    nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
+    quotes: [
+      "Pretty pretty prettayyyyy good",
+      "Is that a parkinson's thing?",
+      "women love a self confident bald man",
+      "I'm a walking talking enigma"
+    ],
+    characters: [
+      {
+        name: "Jeff",
+        occupation: "manager"
+      },
+      {
+        name: "funkhauser",
+        occupation: "tv dude"
+      },
+      {
+        name: "susie",
+        occupation: "jeffs wife",
+        favourtieHobby: "Swearing at Larry and Jeff"
+      }
+    ]
+  }
+};
+console.log(crazyObject.taco.salsa[5])
+console.log(crazyObject.larry.quotes[0])
+console.log(crazyObject.larry.characters[2].favourtieHobby)
+console.log(crazyObject.larry.nicknames[1])
+console.log(crazyObject.larry.characters[1])
+crazyObject.larry.quotes[4] = "I'm trying to elevate small talk to medium talk"
+console.log(crazyObject.larry.quotes)
+/*
+ * Prompt 06:
+ *
+ * Change the value of limbo to null in the following object:
+ */
+const inception = {
+  reality: {
+    dreamLayer1: {
+      dreamLayer2: {
+        dreamLayer3: {
+          dreamLayer4: {
+            dreamLayer5: {
+              dreamLayer6: {
+                limbo: "Joseph Gordon Levitt"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+};
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null
+
+
+/*
+ * Work through each of the prompts below. Update `index.html` with the link to
+ * this file to see your results in the console.
+ *
+ * Pro Tip: Comment out your solution to a prompt before moving on to the next
+ * one.
+ */
+
+/*
+ * Prompt 01:
+ *
+ * Define a class Person with the following properties:
+ *
+ *   - name
+ *   - age
+ *   - favoriteColor
+ *
+ * Create 2 instances of your Person class
+ */
+ let myPerson
+ let myPeople
+class Person {
+    constructor(name, age, favoriteColor){
+        this.name = name
+        this.age = age
+        this.favoriteColor = favoriteColor
+    }
+}
+myPerson = new Person()
+myPeople = new Person()
+/*
+ * Prompt 02:
+ *
+ * Create a BankAccount class with the folowing properties:
+ *
+ *   - type (should default to 'checking')
+ *   - amount (should default to 0)
+ *   - withdraw (a method that should decrease the value of amount by the amount
+ *     withdrawn)
+ *   - deposit (a method that should increase the value of amount by the amount
+ *     deposited)
+ *   - transaction history (an array of objects describing each transaction
+ *     (withdraw and deposit) on the account)
+ *
+ * Create an instance of your BankAccount class. Use your deposit and withdraw
+ * methods, then print the transaction history.
+ */
+ let bank 
+class BankAccount {
+    constructor(type, amount, transactionHistory){ 
+    this.type = "checking",
+    this.amount = 0,
+    this.transactionHistory = []
+    }
+    withdraw(){
+        return this.amount = this.amount - withdrawAmount
+    }
+    deposit(){
+        return this.amount = this.amount - depositedAmount
+    }
+}
+bank = new BankAccount()
+this.transactionHistory []
+/*
+ * Prompt 03:
+ *
+ * Define a class Flower with the following properties:
+ *
+ *   - color (string)
+ *   - petals (number)
+ *   - smellsPrety (boolean)
+ *   - sniff (method, should print "such a pleasing smell" is smellsPretty is
+ *     true or "yuck!" if it's false)
+ *   - describe (method, should print "This is a red flower", if the value of
+ *     color is "red")
+ *   - loveMe (method, should print "They love me", "They love me not", "They
+ *     love me", etc for however many petals there are)
+ *
+ * Create 2 instances using your Flower class. Set all the properties and use each method.
+ */
+
+/*
+ * Prompt 04:
+ *
+ * Define a class SuperHero with the following properties:
+ *
+ *   - name (string)
+ *   - health (number)
+ *   - superpower (string)
+ *   - power (a number)
+ *   - attack (method: take an instance of the SuperHero class and subtract
+ *     power from their health)
+ *
+ * Create two instances of your SuperHero class and have them attack each other.
+ */

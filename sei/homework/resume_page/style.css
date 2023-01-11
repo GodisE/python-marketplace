@@ -1,0 +1,23 @@
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Rubik Vinyl', cursive;
+}
+h3 {
+    color: rgba(red, rgb(124, 0, 128), blue, alpha)
+}
+body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+img {
+    border: black 1px; 
+    border-radius: ;
+    
+}
+img.roundOut{
+    border-radius: 50%
+}
+nav {
+    align-items: center;
+}
