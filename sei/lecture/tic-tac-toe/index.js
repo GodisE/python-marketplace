@@ -57,8 +57,8 @@ class TicTacToeGame {
 	// this class is expecting `boardElement` to be passed in
 	// still a function
 	// `boardElement` is a param
-	constructor(boardElement, messageElement) {
-		// `this` - going to refer to an instance of this class
+	constructor(boardElement, messageElement) { 
+		// `this` - going to refer to an instance of this class2i
 		// these are properties on this class
 		this.boardElement = boardElement
 		this.messageElement = messageElement
