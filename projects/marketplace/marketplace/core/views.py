@@ -1,17 +1,17 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
-from item.models import Category, Item
+from item.models import Type, Item
 
 from .forms import SignupForm
 
 
 def index(request):
     items = Item.objects.filter(is_sold=False)[0:6]
-    categories = Category.objects.all()
+    types = Type.objects.all()
 
     return render(request, 'core/index.html', {
-        'categories': categories,
+        'types': types,
         "items": items
     })
 

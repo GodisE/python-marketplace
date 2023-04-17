@@ -3,30 +3,30 @@ from django.db.models import Q
 from django.shortcuts import render, get_object_or_404, redirect
 
 from .forms import NewItemForm, EditItemForm
-from .models import Item, Category
+from .models import Item, Type
 
 def search(request):
      query = request.GET.get('query', '')
-     category_id = request.GET.get('category', 0)
+     type_id = request.GET.get('type', 0)
      items = Item.objects.filter(is_sold=False)
-     categories = Category.objects.all()
+     types = Type.objects.all()
 
      if query:
           items = items.filter(Q(name__icontains=query) | Q(description__icontains=query))
 
-     if category_id:
-          items = items.filter(category_id=category_id)
+     if type_id:
+          items = items.filter(type_id=type_id)
      
      return render(request, 'item/items.html', {
           'items': items,
           'query': query,
-          'categories': categories,
-          'category_id': int(category_id)
+          'types': types,
+          'type_id': int(type_id)
      })
 
 def detail(request, pk):
     item = get_object_or_404(Item, pk=pk)
-    related_items = Item.objects.filter(category=item.category, is_sold=False).exclude(pk=pk)[0:3]
+    related_items = Item.objects.filter(type=item.type, is_sold=False).exclude(pk=pk)[0:3]
 
     return render(request, 'item/detail.html', {
         'item': item,
