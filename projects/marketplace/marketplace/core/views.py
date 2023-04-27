@@ -1,18 +1,20 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
-from item.models import Type, Item
+from item.models import Type, Item, Species
 
 from .forms import SignupForm
 
 
 def index(request):
-    items = Item.objects.filter(is_sold=False)[0:6]
+    items = Item.objects.filter(is_sold=False)[0:8]
     types = Type.objects.all()
+    species = Species.objects.all()
 
     return render(request, 'core/index.html', {
         'types': types,
-        "items": items
+        "items": items,
+        'species': species
     })
 
 
@@ -23,6 +25,8 @@ def contact(request):
 def signup(request):
     if request.method == 'POST':
         form = SignupForm(request.POST)
+        for field in form:
+            print(field)
         if form.is_valid():
             form.save()
             return redirect('/login/')
