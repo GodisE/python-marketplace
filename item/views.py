@@ -9,8 +9,10 @@ def search(request):
      query = request.GET.get('query', '')
      type_id = request.GET.get('type', 0)
      items = Item.objects.filter(is_sold=False)
+     
      types = Type.objects.all()
-     species = Species.objects.all()
+    #  species = Species.objects.all()
+    #  species_id = request.GET.get('species', 0)
 
      if query:
           items = items.filter(Q(type__name__icontains=query) | Q(description__icontains=query))
@@ -24,7 +26,8 @@ def search(request):
           'query': query,
           'types': types,
           'type_id': int(type_id),
-          'species': species
+        #   'species': species,
+        #   'species_id': species_id
      })
 
 def detail(request, pk):
@@ -43,12 +46,10 @@ def detail(request, pk):
 def new(request):
     if request.method == 'POST':
         form = NewItemForm(request.POST, request.FILES)
-
         if form.is_valid():
             item = form.save(commit=False)
             item.created_by = request.user
             item.save()
-
             return redirect('item:detail', pk=item.id)
         
     else:

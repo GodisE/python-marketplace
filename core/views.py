@@ -7,7 +7,7 @@ from .forms import SignupForm
 
 
 def index(request):
-    items = Item.objects.filter(is_sold=False)[0:6]
+    items = Item.objects.filter(is_sold=False)[0:8]
     types = Type.objects.all()
     species = Species.objects.all()
 
@@ -25,6 +25,8 @@ def contact(request):
 def signup(request):
     if request.method == 'POST':
         form = SignupForm(request.POST)
+        for field in form:
+            print(field)
         if form.is_valid():
             form.save()
             return redirect('/login/')

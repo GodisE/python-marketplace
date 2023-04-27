@@ -3,19 +3,19 @@
 {% block title %} Edit Item {% endblock  %}
 
 {% block content %}
-<hi class='mb-6 text-3xl'>{{ title }}</h1>
+<h1>{{ title }}</h1>
 
     {% comment %} enctype allows for images to be uploaded {% endcomment %}
 <form method='post' actions='.' enctype='multipart/form-data'>
     {% csrf_token %}
-    <div class='space-y-4 text-lg'>
+    <div>
         {{ form.as_p }}
     </div>
     {% if form.errors or form.non_field_errors %}
-    <div class='mb-3 p-6 bg-red-100 rounded-xl '>
+    <div>
         {{ form.non_field_errors }}
     </div>
     {% endif %}
-    <button class='py-4 px-8 text-lg bg-teal-500 hover:bg-teal-700 rounded-xl text-white' >Submit</button>
+    <button>Submit</button>
 </form>
 {% endblock %}
