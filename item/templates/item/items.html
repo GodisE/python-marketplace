@@ -3,36 +3,36 @@
 {% block title  %}Items{% endblock %}
 
 {% block content %}
-<div class='pb-6 grid grid-cols-4 gap-4 '>
-    <div class='col-span-1'>
+<div>
+    <div>
         <form method='get' action="{% url 'item:search' %}">
-            <input name='query' class='w-full py-4 border rounded-xl' type='text' value="{{ query }}" placeholder='Search for an item!' >
-            <button class='mt-2 py=4 px-8 text-lg bg-teal-500 text-white rounded-xl'>Search</button>
+            <input name='query' type='text' value="{{ query }}" placeholder='Search for an item!' >
+            <button>Search</button>
         </form>
 
         <hr>
-        <p class='font-semibold'>types</p> 
+        <p>types</p> 
 
         <ul>
             {% for type in types %}
-            <li class="py-2 px-2 rounded-xl"   >
+            <li>
                 <a href="{% url 'item:search' %}?query={{ query }}&type={{ type.id }}"> {{ type.name }}</a>
             </li>
             {% endfor %}
         </ul>    
     </div>
-    <div class='col-span-3'>
-        <div class='grid grid-cols-3 gap-3'>
+    <div>
+        <div>
             {% for item in items %}
             <div>
                 <a href="{% url 'item:detail' item.id %}">
                     <div>
-                        <img src='{{ item.image.url }}' class='rounded-t-xl'>
+                        <img src='{{ item.image.url }}' >
                     </div>
-                    <div class='p-6 bg-white rounded-b-xl'>
-                        <h2 class='text-2xl'>{{ item.type }}</h2>
-                        <h3 class='text-2xl'>{{ item.species }}</h3>
-                        <p class='text-gray-500'>Price: {{ item.price }}</p>
+                    <div>
+                        <h2>{{ item.type }}</h2>
+                        <h3>{{ item.species }}</h3>
+                        <p>Price: {{ item.price }}</p>
                     </div> 
                 </a>
             </div>

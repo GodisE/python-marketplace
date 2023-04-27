@@ -25,7 +25,7 @@ class Species(models.Model):
 
 class Item(models.Model):
     type = models.ForeignKey(Type, related_name="item.item.type+", on_delete=models.CASCADE)
-    species = models.ForeignKey(Species, related_name="item.item.species+", on_delete=models.CASCADE)
+    # species = models.ForeignKey(Species, related_name="item.item.species+", on_delete=models.CASCADE)
     description = models.TextField(blank=True, null=False)
     price = models.FloatField()
     image = models.ImageField(upload_to='item_images', blank=True, null=True)
